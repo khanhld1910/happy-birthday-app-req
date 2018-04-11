@@ -1,14 +1,298 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content no-bounce>
+	<ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" loop="true" autoplay="5000" speed="1000">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations centerX" id="gift-box">
+					<img src="./assets/imgs/gift.svg" />
+				</div>
+				<div class="decorations message" id="message-01">
+					<h2>
+						<p>Mừng sinh nhật Ngọc</p>
+						<p>10/04/2018</p>
+					</h2>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame z-depth-2 img-01">
+					<img src="./assets/pics/a (1).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+
+				<div class="decorations image-frame landscape z-depth-2 img-02">
+					<img src="./assets/pics/a (10).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">gửi đến em</p>
+					<p class="text">lời chúc sinh nhật muộn</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame z-depth-2 img-03">
+					<img src="./assets/pics/a (11).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame z-depth-2 img-04">
+					<img src="./assets/pics/a (12).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">chúc em luôn</p>
+					<p class="text">có niềm vui trong cuộc sống</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame z-depth-2 img-05">
+					<img src="./assets/pics/a (13).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame z-depth-2 img-06">
+					<img src="./assets/pics/a (14).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame landscape z-depth-2 img-07">
+					<img src="./assets/pics/a (15).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">nếu một ngày</p>
+					<p class="text">con đường phía trước</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame z-depth-2 img-05">
+					<img src="./assets/pics/a (16).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame z-depth-2 img-06">
+					<img src="./assets/pics/a (17).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame landscape z-depth-2 img-07">
+					<img src="./assets/pics/a (18).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">quá chông gai</p>
+					<p class="text">và khó khăn để vượt qua</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame landscape z-depth-2 img-08">
+					<img src="./assets/pics/a (19).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame landscape z-depth-2 img-09">
+					<img src="./assets/pics/a (20).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">nếu một ngày</p>
+					<p class="text">bỗng con tim em</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame landscape z-depth-2 img-08">
+					<img src="./assets/pics/a (21).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame landscape z-depth-2 img-09">
+					<img src="./assets/pics/a (22).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">thật mỏi mệt</p>
+					<p class="text">và chỉ muốn tất cả dừng lại</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page" >
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame landscape z-depth-2 img-10">
+					<img src="./assets/pics/a (23).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame  z-depth-2 img-11">
+					<img src="./assets/pics/a (24).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">hi vọng</p>
+					<p class="text">được luôn ở bên cạnh em</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame landscape z-depth-2 img-10">
+					<img src="./assets/pics/a (25).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame  z-depth-2 img-11">
+					<img src="./assets/pics/a (17).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">cùng vượt qua</p>
+					<p class="text">mọi điều đắng cay và mất mát</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame landscape z-depth-2 img-10">
+					<img src="./assets/pics/a (18).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations image-frame  z-depth-2 img-11">
+					<img src="./assets/pics/a (19).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">cùng chia sẻ</p>
+					<p class="text">tất cả niềm vui và hạnh phúc</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame z-depth-2 img-12">
+					<img src="./assets/pics/a (20).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">bởi vì,</p>
+					<p class="text">được gặp em</p>
+				</div>
+			</div>
+		</ion-slide>
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations image-frame z-depth-2 img-12">
+					<img src="./assets/pics/a (21).jpg" />
+					<div class="glow-wrap">
+						<i class="glow"></i>
+					</div>
+				</div>
+				<div class="decorations message">
+					<p class="text">chính là điều</p>
+					<p class="text">may mắn nhất đã đến với anh</p>
+				</div>
+			</div>
+		</ion-slide>
+
+		<ion-slide>
+			<div class="page">
+				<img class="z-7" src="./assets/imgs/garlands.svg" />
+				<div class="decorations centerX" id="cake">
+					<img src="./assets/imgs/cake.svg" />
+				</div>
+				<div class="decorations message" id="message-02">
+
+					<h2>
+						<p>và sau tất cả...</p>
+						<p class="text">Chúc Mừng Sinh Nhật</p>
+					</h2>
+				</div>
+			</div>
+		</ion-slide>
+
+	</ion-slides>
 </ion-content>
+
+<div class="decorations rotating" id="sun">
+	<img src="./assets/imgs/sun.svg" />
+</div>
+
+<img class="decorations" id="cloud" src="./assets/imgs/clouds.svg" />
+
+<div class="decorations" id="pinwheel">
+	<img src="./assets/imgs/pinwheel-1.svg" class="rotating-1" />
+</div>
+
+<div class="decorations" id="pinwheel-1">
+	<img src="./assets/imgs/pinwheel.svg" class="rotating-2" />
+</div>
+
+<div class="decorations" id="pinwheel-stick">
+
+</div>
+<div class="decorations" id="pinwheel-stick-1">
+
+</div>
+
+
+<div class="decorations" id="firework">
+	<img class="firework" src="./assets/imgs/fireworks.svg" />
+</div>
+
+<div class="decorations" id="firework-2">
+	<img class="firework" src="./assets/imgs/fireworks.svg" />
+</div>

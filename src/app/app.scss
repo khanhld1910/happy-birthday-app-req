@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,98 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face {
+    font-family: 'Boulevai';
+    src: url('../assets/fonts/boulevai.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Isadora';
+    src: url('../assets/fonts/isadora.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Baomoi';
+    src: url('../assets/fonts/baomoi.woff2') format('woff2');
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.show-page {
+    background: -moz-linear-gradient(top, rgba(117, 213, 227, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(117, 213, 227, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(117, 213, 227, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75d5e3', endColorstr='#00ffffff', GradientType=0);
+    /* IE6-9 */
+    position: relative;
+}
+
+.rotating-1 {
+    animation: rotate 1s linear reverse infinite;
+}
+
+.rotating-2 {
+    animation: rotate 3s linear reverse infinite;
+}
+
+.rotating {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes firework {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+.firework {
+    animation: firework 4s ease-in-out infinite;
+}
+
+
+
+@keyframes glow {
+    0%, 10% {
+        margin-top: -20px;
+    }
+    90%, 100% {        
+        margin-top: 0px;
+        transform: rotate(45deg) translate(450%, 0);
+    }
+}
+
+
+.decorations .glow-wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.decorations .glow {
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 200%;
+    background: rgba(255, 255, 255, .2);
+    top: 0;
+    filter: blur(5px);
+    animation: glow 4s ease-in-out infinite;
+}
