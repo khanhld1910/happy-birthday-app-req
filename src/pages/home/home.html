@@ -1,5 +1,5 @@
 <ion-content no-bounce>
-	<ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" loop="true" autoplay="5000" speed="1000">
+	<ion-slides #slides (ionSlideDidChange)="slideChanged()" loop="true" autoplay="5000" speed="1000">
 
 		<ion-slide>
 			<div class="page">

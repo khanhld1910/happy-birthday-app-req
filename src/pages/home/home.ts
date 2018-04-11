@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core'
 import { NavController, Slides } from 'ionic-angular'
-import {SmartAudioProvider} from '../../providers/smart-audio';
 
 @Component({
   selector: 'page-home',
@@ -13,7 +12,6 @@ export class HomePage {
 
   constructor(
     public navCtrl: NavController,
-    private smartAudio: SmartAudioProvider
   ) {
   }
 
@@ -21,14 +19,15 @@ export class HomePage {
     //
   }
 
-  onSlideChangeStart(slider: Slides) {
-    //
-  }
-
   ionViewWillEnter() {
     this.slides.update()
 
-    this.smartAudio.play('bgMusic')
+    let audioAsset = new Audio('assets/music/tone.mp3')
+    audioAsset.play()
+  }
+
+  slideChanged() {
+    this.slides.startAutoplay()
   }
 
 }

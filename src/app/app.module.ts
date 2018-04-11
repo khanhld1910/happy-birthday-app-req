@@ -7,8 +7,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
-import { SmartAudioProvider } from '../providers/smart-audio';
-import { NativeAudio } from '@ionic-native/native-audio'
 
 @NgModule({
   declarations: [
@@ -29,8 +27,6 @@ import { NativeAudio } from '@ionic-native/native-audio'
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ScreenOrientation,
-    SmartAudioProvider,
-    NativeAudio    
   ]
 })
 export class AppModule {}
